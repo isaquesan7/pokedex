@@ -87,6 +87,8 @@
     color: #fff;
     border-radius: .5rem;
     border: 1px solid rgba(0, 0, 0, .4);
+    height: auto;
+    overflow: hidden;
 }
 
 .pokemon .number{
@@ -96,8 +98,11 @@
 }
 
 .pokemon .name{
+    margin-top: -1.2rem;
     text-transform: capitalize;
-    margin-bottom: .25rem;
+    margin-bottom: .50rem;
+    margin-left: .2rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .pokemon .detail{
@@ -126,14 +131,20 @@
     border: 1px solid rgba(0, 0, 0, .4);
 }
 
-.pokemon .detail img{
+.pokemonIMG {
+    width: 10px;
+    height: 15px;
     position: relative;
-    margin: -2.5rem .7rem;
-    max-width: 100%;
-    height: 130px;
-    align-self: flex-end;
-    object-fit: cover;
-    object-position: left;
+    padding: 1rem;
+}
+
+.pokemonIMG img{
+    position: absolute;
+    top: 0;
+    transform: translate(-40%, -20%);
+    max-width: 150px;
+    max-height: 130px;
+    z-index: 1;
 }
 
 .pagina button{

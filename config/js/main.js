@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadButton');
 
 const maxRecords = 151
-const limit = 9
+const limit = 12
 let offset = 0;
 
 function convertPokemonToHtml(pokemon){
@@ -18,7 +18,9 @@ function convertPokemonToHtml(pokemon){
                                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                                 </ol>
 
-                                <img src="${pokemon.photo}" alt="${pokemon.name}">
+                                <div class="pokemonIMG">
+                                    <img src="${pokemon.photo}" alt="${pokemon.name}">
+                                </div> 
 
                             </div>
                             

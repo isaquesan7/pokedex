@@ -12,7 +12,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.types = types
     pokemon.type = type
 
-    pokemon.photo = `https://raw.githubusercontent.com/wellrccity/pokedex-html-js/master/assets/img/pokemons/poke_${pokemon.number}.gif`
+    pokemon.photo = `./config/img/pokemons/poke_${pokemon.number}.gif`
 
     return pokemon
 }

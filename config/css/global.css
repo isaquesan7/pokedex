@@ -2,8 +2,13 @@
     font-family: 'Roboto' , 'sans-serif';
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
-    background-color: #F6F8FC;
+    background-color: rgba(0, 128, 0, .3);
+    background-image: url(../img/bg.webp);
 }
 
 .content{
@@ -16,9 +21,8 @@ body{
     margin: 20px;
 }
 
-.content h1{
-    text-align: center;
-    color: #ff0000;
+.logo img{
+    max-width: 100%;
 }
 
 @media screen and (min-width: 992px) {
