@@ -20,6 +20,7 @@ function convertPokemonToHtml(pokemon){
 
                                 <div class="pokemonIMG">
                                     <img src="${pokemon.photo}" alt="${pokemon.name}">
+                                    <img class="pokebg" src="./config/img/pokeball.svg" alt="${pokemon.name}">
                                 </div> 
 
                             </div>
