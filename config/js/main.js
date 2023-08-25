@@ -9,7 +9,7 @@ let valor = 0;
 
 function convertPokemonToHtml(pokemon){
     return `
-                        <li class="pokemon ${pokemon.type} bg" onclick="abrirModal(${pokemon.number})">
+                        <li class="pokemon ${pokemon.type} bg animate__animated animate__fadeIn" onclick="abrirModal(${pokemon.number})">
 
                             <span class="number">nº ${pokemon.number}</span>
                             <span class="name">${pokemon.name}</span>
@@ -35,7 +35,7 @@ function convertPokemonToHtml(pokemon){
 
 function convertPokemonModal(pokemon){
     return `
-                <a onclick="abrirModal(false)" id="btnClose" class="btnModal"><i class="fa-solid fa-xmark"></i></a>
+                <a id="btnClose" class="btnModal"><i class="fa-solid fa-xmark" onclick="abrirModal(false)"></i></a>
 
                 <div class="contentPoke ${pokemon.type} bg">
 
@@ -99,15 +99,17 @@ loadMoreButton.addEventListener('click', () => {
 })
 
 function abrirModal(number){
+
     if(number){
         modalOpen.classList.remove('off');
         modalOpen.classList.add('on');
 
         showDetails(number - 1);
- 
+
     }else{
         modalOpen.classList.remove('on');
         modalOpen.classList.add('off');
         modalOpen.innerHTML = ''
     }
+
 }
