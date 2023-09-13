@@ -4,9 +4,15 @@
     margin-bottom: 5px;
     text-align: right;
 }
+
 .modal a i{
     font-size: 20px;
     cursor: pointer;
+    transition: .15s ease-in
+}
+
+.modal a i:hover{
+    color: #ff0000;
 }
 
 .contentPoke{

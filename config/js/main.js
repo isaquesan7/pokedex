@@ -35,6 +35,8 @@ function convertPokemonToHtml(pokemon){
 
 function convertPokemonModal(pokemon){
     return `
+            <div class="modal animate__animated animate__flip">
+
                 <a id="btnClose" class="btnModal"><i class="fa-solid fa-xmark" onclick="abrirModal(false)"></i></a>
 
                 <div class="contentPoke ${pokemon.type} bg">
@@ -65,6 +67,7 @@ function convertPokemonModal(pokemon){
                     </div>
 
                 </div>
+            </div>
             `
 }
 
